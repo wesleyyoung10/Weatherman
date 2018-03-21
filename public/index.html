@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Weatherman</title>
-    <link rel="stylesheet" href="/screen.css">
-  </head>
-  <body>
-    <h1>Hello, World!</h1>
-    <script src="/main.js" charset="utf-8"></script>
-  </body>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weatherman</title>
+  <link rel="stylesheet" href="./screen.css">
+</head>
+
+<body class="Yo">
+  <h1>Weather at your location</h1>
+  <div class="weather-app">
+    <div class="left">
+      <div class="temperature">
+        <span id="temperature">0</span>
+      </div>
+      <div class="location">
+        <span id="location">Unknown</span>
+      </div>
+    </div>
+    <div class="right">
+      <div class="top">
+        <img id="icon" width="75px" src="codes/800.png" />
+      </div>
+
+      <div class="bottom">
+
+        <div class="humidity">
+          <img src="https://thumbs.dreamstime.com/b/blue-water-drop-symbol-simple-flat-vector-icon-isolated-white-background-95865662.jpg"
+            height="16px" />
+          <span id="humidity">0</span>
+        </div>
+
+        <div class="wind">
+          <span id="wind">0</span> mph
+          <span id="direction">N</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="./main.js" charset="utf-8"></script>
+</body>
+
 </html>
